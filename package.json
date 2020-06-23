@@ -1,11 +1,12 @@
 {
   "name": "skyhof",
   "version": "1.0.0",
-  "description": "",
-  "main": "webpack.config.js",
+  "description": "Skyscraper Hall of Fame",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server.js"
+    "start": "NODE_ENV=production node server/server.js",
+    "build": "NODE_ENV=production webpack",
+    "dev": "NODE_ENV=development webpack-dev-server --open & nodemon server/server.js"
   },
   "repository": {
     "type": "git",
@@ -19,9 +20,22 @@
   "homepage": "https://github.com/howaboutjeho/skyhof#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongodb": "^3.5.9",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "@babel/core": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "@babel/preset-react": "^7.10.1",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.6.0",
+    "nodemon": "^2.0.4",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }
