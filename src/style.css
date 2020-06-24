@@ -1,12 +1,31 @@
-body {
-  margin: 0;
+html {
+  height: 100%;
 }
 
-.container {
-  padding: 0 2.5%;
+body {
+  background-color:blue ;
+  font-family: Helvetica, sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* grid-template-columns: 45% 20% 45%;
+  grid-template-rows: 25% 65% 10%; */
+  /* overflow: scroll; */
+}
+
+.header {
+  display:flex
+  /* display: flex;
+  justify-content: center;
+  align-content: center; */
 }
 
 button {
-  height: 100px;
-  width: 100px;
+  display:flex;
+  height: 20px;
+  width: 70px;
+  float: right;
 }

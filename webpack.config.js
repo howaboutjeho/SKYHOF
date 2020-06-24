@@ -9,10 +9,10 @@ module.exports = {
   devServer: {
     publicPath: '/dist/',
     proxy: {
-      '/api':{
-        target: 'http://localhost:3000/'
-      }
-    }
+      '/api': {
+        target: 'http://localhost:3000/',
+      },
+    },
   },
   module: {
     rules: [
@@ -22,20 +22,19 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-react', '@babel/preset-env']
-          }
-        }
+            presets: ['@babel/preset-react', '@babel/preset-env'],
+          },
+        },
       },
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.css$/i,
         use: [
           // Creates `style` nodes from JS strings
           'style-loader',
           // Translates CSS into CommonJS
           'css-loader',
-          // Compiles Sass to CSS
-          'sass-loader']
-      }
-    ]
-  }
+        ],
+      },
+    ],
+  },
 };

@@ -6,6 +6,8 @@ const path = require("path");
 
 const app = express();
 
+app.use(express.static(path.resolve(__dirname, '../index.html')));
+
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const MongoClient = require("mongodb").MongoClient;
