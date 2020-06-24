@@ -2,7 +2,7 @@
   "name": "skyhof",
   "version": "1.0.0",
   "description": "Skyscraper Hall of Fame",
-  "main": "index.js",
+  "main": "./assets/index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production nodemon server/server.js",
     "build": "cross-env NODE_ENV=production webpack",
@@ -30,7 +30,8 @@
     "mongodb": "^3.5.9",
     "mongoose": "^5.9.20",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.10.3",
