@@ -12,7 +12,7 @@ class Main extends Component {
 
         <div className="body">
         <img src={"./images/index.jpg"} />
-        <Link to='/Hof'>
+        <Link to='/hof'>
           <button className='Hof'>Hall of Fame</button>
         </Link>
         </div>

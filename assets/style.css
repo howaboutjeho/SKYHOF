@@ -60,6 +60,42 @@ button {
   /* float: right; */
 }
 
+.buildingPost {
+  font-family: Helvetica, sans-serif;
+  margin-left: 500px;
+  margin-right: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: groove;
+  border-color: steelblue;
+  border-width: 2px;
+  background-repeat: no-repeat;
+  background: white;
+}
+
+.innerPost {
+  margin-left: 50px;
+  margin-right: 50px;
+  line-height: 2px;
+}
+
+p {
+  line-height: normal;
+  font-size: 12px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.hofback {
+  background: url('https://wallpaperaccess.com/full/568266.jpg');
+  background-repeat: repeat;
+}
+
 
 /* 
 body {

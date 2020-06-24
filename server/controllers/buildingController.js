@@ -2,17 +2,6 @@ const Skyscrap = require("../models/skyscrapModel.js");
 
 const buildingController = {};
 
-// buildingController.createBuilding = (req, res, next) => {
-//   const newBuilding = new Skyscrap({
-//     name: req.body,name,
-//     city: req.body.city,
-//     img: req.body.img,
-//     detail: req.body.detail,
-//     date: req.body.date,
-//   });
-//   next();
-// };m
-
 buildingController.createBuilding = (req, res, next) => {
   // write code here
   const {
@@ -58,3 +47,14 @@ module.exports = buildingController;
 //     next();
 //   })
 //   .catch((error) => console.error(error));
+
+// buildingController.createBuilding = (req, res, next) => {
+//   const newBuilding = new Skyscrap({
+//     name: req.body,name,
+//     city: req.body.city,
+//     img: req.body.img,
+//     detail: req.body.detail,
+//     date: req.body.date,
+//   });
+//   next();
+// };
