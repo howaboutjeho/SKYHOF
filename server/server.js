@@ -2,8 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
 const app = express();
-const skyscrap = require("./models/skyscrapModel.js");
-// const userController = require("./controllers/userController");
+const userController = require("./controllers/userController");
 
 app.use(express.static(path.resolve(__dirname, "../index.html")));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -14,7 +13,10 @@ app.get("/", (req, res) => {
 //
 app.post("/modify", (req, res) => {
   console.log('hello', req.body);
-
+//send response back to the client
+// res.sendStatus(200)
+// res.json({key: 'value'})
+// res.redirect(200, '/')
 });
 
 app.listen(3000, () => {
